@@ -1,0 +1,2 @@
+class RouteMaster < ApplicationRecord
+end

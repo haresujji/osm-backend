@@ -1,0 +1,2 @@
+class TrnCheckList < ApplicationRecord
+end

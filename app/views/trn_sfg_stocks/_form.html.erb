@@ -1,0 +1,17 @@
+<%= form_with(model: trn_sfg_stock, local: true) do |form| %>
+  <% if trn_sfg_stock.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trn_sfg_stock.errors.count, "error") %> prohibited this trn_sfg_stock from being saved:</h2>
+
+      <ul>
+        <% trn_sfg_stock.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

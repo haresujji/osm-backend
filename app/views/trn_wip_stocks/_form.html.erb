@@ -1,0 +1,17 @@
+<%= form_with(model: trn_wip_stock, local: true) do |form| %>
+  <% if trn_wip_stock.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trn_wip_stock.errors.count, "error") %> prohibited this trn_wip_stock from being saved:</h2>
+
+      <ul>
+        <% trn_wip_stock.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

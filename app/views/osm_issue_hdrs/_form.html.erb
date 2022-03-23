@@ -1,0 +1,17 @@
+<%= form_with(model: osm_issue_hdr, local: true) do |form| %>
+  <% if osm_issue_hdr.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(osm_issue_hdr.errors.count, "error") %> prohibited this osm_issue_hdr from being saved:</h2>
+
+      <ul>
+        <% osm_issue_hdr.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

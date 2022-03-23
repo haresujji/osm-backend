@@ -1,0 +1,2 @@
+class TransportMaster < ApplicationRecord
+end

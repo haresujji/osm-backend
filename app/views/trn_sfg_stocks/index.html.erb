@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trn Sfg Stocks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trn_sfg_stocks.each do |trn_sfg_stock| %>
+      <tr>
+        <td><%= link_to 'Show', trn_sfg_stock %></td>
+        <td><%= link_to 'Edit', edit_trn_sfg_stock_path(trn_sfg_stock) %></td>
+        <td><%= link_to 'Destroy', trn_sfg_stock, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trn Sfg Stock', new_trn_sfg_stock_path %>
